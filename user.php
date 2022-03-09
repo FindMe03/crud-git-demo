@@ -2,13 +2,15 @@
 include 'connect.php';
 if(isset($_POST['submit'])){
     $name=$_POST['name'];
+    $middlename=$_POST['middlename'];
+    $surname=$_POST['surname'];
     $email=$_POST['email'];
     $mobile=$_POST['mobile'];
     $password=$_POST['password'];
 
 
 
-    $sql="insert into crud (name,email,mobile,password) values('$name','$email','$mobile','$password')";
+    $sql="insert into crud (name,middlename,surname,email,mobile,password) values('$name','$middlename','$surname','$email','$mobile','$password')";
     $result=mysqli_query($con,$sql);
     if($result){
     //echo "Data inserted successfully";
@@ -41,6 +43,16 @@ if(isset($_POST['submit'])){
             <div class="form-group">
                 <label>Name</label>
                 <input type="text" class="form-control" placeholder="Enter your name" name="name" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label>Middle name</label>
+                <input type="text" class="form-control" placeholder="Enter your middlename" name="middlename"
+                    autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label>Surname</label>
+                <input type="text" class="form-control" placeholder="Enter your Surname" name="surname"
+                    autocomplete="off">
             </div>
             <div class="form-group">
                 <label>Email</label>

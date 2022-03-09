@@ -23,6 +23,8 @@ include  'connect.php'
                 <tr>
                     <th scope="col">ID No.</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Middlename</th>
+                    <th scope="col">Surname</th>
                     <th scope="col">Email</th>
                     <th scope="col">Mobile</th>
                     <th scope="col">Password</th>
@@ -39,6 +41,8 @@ include  'connect.php'
                 while($row=mysqli_fetch_assoc($result)){
                     $id=$row['id'];
                     $name=$row['name'];
+                    $middlename=$row['middlename'];
+                    $surname=$row['surname'];
                     $email=$row['email'];
                     $mobile=$row['mobile'];
                     $password=$row['password'];
@@ -46,6 +50,8 @@ include  'connect.php'
                 <tr>
                     <th scope="row">'.$id.'</th>
                     <td>'.$name.'</td>
+                    <td>'.$middlename.'</td>
+                    <td>'.$surname.'</td>
                     <td>'.$email.'</td>
                     <td>'.$mobile.'</td>
                     <td>'.$password.'</td>
