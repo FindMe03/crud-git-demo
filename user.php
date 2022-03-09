@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
-    <title>Crud Operation</title>
+    <title>First Project</title>
 </head>
 
 <body>
